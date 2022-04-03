@@ -1,4 +1,4 @@
- Steps to create Ecommerce website with vanilla javascript
+ Plans to create Ecommerce website with vanilla javascript
 
 1. Create Folder Structure
   1. create root folder as Fully Ecommerce website
@@ -54,7 +54,7 @@
     10. create screens/Error404.js and rendor error message
 
 6. Create Node.js server
-    1. run npm init or npm init --yes in root Fully ecomerce website folder  
+    1. run npm init or npm init --yes in root  Fully ecomerce website folder  
     2. run npm install express to install express
     3. create server.js
     4. add start command as node backend/server.js
@@ -63,6 +63,26 @@
     7. create route for /api/products
     8. return products in data.js
     run npm start
+
+7. load products from backend
+   1. edit HomeScreen.js
+    2. make render async
+    3. fetch products from '/api/products' in render()
+    4. make router() async and call await HomeScreen.render()
+   5. use cors on backend :install using npm istall cors
+
+8. Add webpack
+  1. cd frontend
+  2. npm install -D webpack webpack-cli webpack-dev-server
+  3. npm uninstall live-server
+  4. "start": "webpack-dev-server --node development --watch-content-base --open"
+  5. move idex.html, style.css and images to frontend folder
+  6. rename app.js to index.js
+  7. update index.html
+  8. add <script src="main.js"></script>
+  9. npm start
+  10. npm install axios
+  11. change fetch to axios in HomeScreen   
 
 
     
